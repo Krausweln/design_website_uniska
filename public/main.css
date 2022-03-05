@@ -1,0 +1,35 @@
+@media only screen and (min-width: 1000px) {
+  .w-fit.active {
+    --translate: -50%;
+    transform: translate(var(--translate));
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .w-fit.active {
+    --translate: 0, 20%;
+    transform: translate(var(--translate));
+  }
+}
+/* @keyframes w-fit {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(-50%);
+  }
+} */
+
+.w-fit::after {
+    content: ""
+    height: 100%;
+    width: 5px;
+    background-color: black;
+}
+
+#hero {
+  transition-delay: 200ms
+}
+
