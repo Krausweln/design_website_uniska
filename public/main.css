@@ -5,7 +5,6 @@
   }
 }
 
-
 @media only screen and (max-width: 600px) {
   .w-fit.active {
     --translate: 0, 20%;
@@ -23,13 +22,41 @@
 } */
 
 .w-fit::after {
-    content: ""
-    height: 100%;
-    width: 5px;
-    background-color: black;
+  content: "";
+  height: 100%;
+  width: 5px;
+  background-color: black;
 }
 
 #hero {
-  transition-delay: 200ms
+  transition-delay: 200ms;
 }
 
+span.this {
+  height: 95vh;
+  background-color: black;
+  opacity: 0.25;
+  z-index: 10;
+}
+
+#bg-flash {
+  image-rendering: optimizeSpeed;
+  image-resolution: 1;
+  background-attachment: fixed;
+}
+
+body {
+  color: white;
+}
+
+::-webkit-scrollbar {
+  position: absolute;
+  background-color: none;
+  width: 0;
+}
+
+::-webkit-scrollthumb {
+  height: 3rem;
+  background-color: grey;
+  opacity: .90;
+}
