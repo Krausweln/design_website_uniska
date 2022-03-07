@@ -11,21 +11,29 @@
     </style>
     <title>animasi paiz</title>
   </head>
-  <body class="w-100" style="min-height: 200vh">
-    <div class="transition-all duration-500 bg-cover bg-center" id="bg-flash" style="min-height: 95vh">
+  <body class="w-full relative" style="min-height: 200vh">
+    <div class="transition-all duration-500 bg-cover bg-center" id="bg-flash">
       <nav class="flex flex-row justify-between items-center" style="min-height: 3rem">
         <div class="ml-2 sm:ml-6 lg:ml-12">
           <a href="" class="text-sm sm:text-lg md:text-xl lg:text-3xl">Krausweln</a>
         </div>
-        <div class="flex gap-2 mr-4 sm:mr-4 lg:mr-12 lg:gap-8">
-          <a href="" class="text-sm sm:text-lg md:text-xl lg:text-3xl" id="del">Home</a>
-          <a href="" class="text-sm sm:text-lg md:text-xl lg:text-3xl">Contact</a>
-          <a href="" class="text-sm sm:text-lg md:text-xl lg:text-3xl">About</a>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="slide-nav">
+          <div class="slide-nav-content">
+            <ul>
+              <li><a href="">why tho</a></li>
+              <li><a href="">that</a></li>
+              <li><a href="">and this</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
 
-      <div class="flex grow bg-cover bg-center items-center justify-center">
-        <span class="this"></span>
+      <div class="flex grow bg-cover bg-center items-center justify-center" style="min-height: 95vh">
         <div class="flex">
           <p class="font-roboto tracking-wider text-6xl md:text-9xl text-white w-fit p-4 rounded-lg uppercase transition-all duration-1000 ease-in-out" id="hero">indonesia.</p>
         </div>
