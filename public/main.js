@@ -4,7 +4,9 @@ let colors = ["#ffffff", "#000000", "#DC2626"]
 let text = document.querySelector("#hero")
 let hamburger = document.querySelector(".hamburger")
 let slideNav = document.querySelector(".slide-nav")
+let navRight = document.querySelector(".slide-nav-right")
 let span = document.querySelector("span")
+let sub = document.querySelector("#sub")
 const rajaAmpat = ["raja ampat"]
 
 //image array
@@ -24,18 +26,21 @@ function increment() {
   if (i == 0) {
     bgColor.style.backgroundImage = "url('../img/img1.jpg')"
     text.style.color = colors[0]
-    text.innerHTML = "raja ampat"
+    sub.innerHTML = "raja ampat"
+    sub.style.color = colors[2]
   } else if (i == 1) {
     bgColor.style.backgroundImage = "url('../img/img2.jpg')"
     text.style.color = colors[2]
-    text.innerHTML = "bromo"
+    sub.innerHTML = "bromo"
+    sub.style.color = colors[0]
   } else if (i == 2) {
     bgColor.style.backgroundImage = "url('../img/img3.jpg')"
     text.style.color = colors[0]
-    text.innerHTML = "pantai"
+    sub.innerHTML = "pantai"
+    sub.style.color = colors[2]
   }
 
-  //background color change
+  // background color change
   // console.log(i)
   // let color = colors[i]
   // bgColor.style.backgroundColor = color
@@ -51,7 +56,9 @@ function increment() {
 }
 
 hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active")
   slideNav.classList.toggle("active")
+  navRight.classList.toggle("active")
   span.classList.toggle("active")
 })
 

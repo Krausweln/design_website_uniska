@@ -468,16 +468,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+.relative {
+  position: relative;
+}
+
 .ml-2 {
   margin-left: 0.5rem;
 }
 
-.mr-4 {
-  margin-right: 1rem;
-}
-
 .flex {
   display: flex;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .w-fit {
@@ -494,6 +498,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-direction: row;
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
 .items-center {
   align-items: center;
 }
@@ -504,10 +512,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .justify-between {
   justify-content: space-between;
-}
-
-.gap-2 {
-  gap: 0.5rem;
 }
 
 .rounded-lg {
@@ -522,12 +526,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-position: center;
 }
 
-.bg-top {
-  background-position: top;
-}
-
 .p-4 {
   padding: 1rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .font-roboto {
@@ -542,6 +546,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .uppercase {
@@ -580,10 +589,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-left: 1.5rem;
   }
 
-  .sm\:mr-4 {
-    margin-right: 1rem;
-  }
-
   .sm\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
@@ -600,6 +605,11 @@ Ensure the default browser behavior of the `hidden` attribute.
     font-size: 8rem;
     line-height: 1;
   }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -607,16 +617,13 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-left: 3rem;
   }
 
-  .lg\:mr-12 {
-    margin-right: 3rem;
-  }
-
-  .lg\:gap-8 {
-    gap: 2rem;
-  }
-
   .lg\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .lg\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 }
