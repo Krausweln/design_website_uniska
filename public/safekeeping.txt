@@ -1,0 +1,5 @@
+<div class="flex gap-2 mr-4 sm:mr-4 lg:mr-12 lg:gap-8">
+    <a href="" class="text-sm sm:text-lg md:text-xl lg:text-3xl" id="del">Home</a>
+    <a href="" class="text-sm sm:text-lg md:text-xl lg:text-3xl">Contact</a>
+    <a href="" class="text-sm sm:text-lg md:text-xl lg:text-3xl">About</a>
+</div>
