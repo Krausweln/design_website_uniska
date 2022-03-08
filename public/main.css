@@ -30,6 +30,7 @@
 
 #hero {
   transition-delay: 200ms;
+  transition: all 500ms ease-in-out;
 }
 
 span.this {
@@ -62,7 +63,11 @@ body {
 } */
 
 .hamburger {
+<<<<<<< Updated upstream
   margin-top: 1rem;
+=======
+  z-index: 9999;
+>>>>>>> Stashed changes
   display: flex;
   z-index: 9999;
   gap: 9px;
