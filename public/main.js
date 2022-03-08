@@ -5,6 +5,7 @@ let text = document.querySelector("#hero")
 let hamburger = document.querySelector(".hamburger")
 let slideNav = document.querySelector(".slide-nav")
 let span = document.querySelector("span")
+const rajaAmpat = ["raja ampat"]
 
 //image array
 
@@ -23,12 +24,15 @@ function increment() {
   if (i == 0) {
     bgColor.style.backgroundImage = "url('../img/img1.jpg')"
     text.style.color = colors[0]
+    text.innerHTML = "raja ampat"
   } else if (i == 1) {
     bgColor.style.backgroundImage = "url('../img/img2.jpg')"
     text.style.color = colors[2]
+    text.innerHTML = "bromo"
   } else if (i == 2) {
     bgColor.style.backgroundImage = "url('../img/img3.jpg')"
     text.style.color = colors[0]
+    text.innerHTML = "pantai"
   }
 
   //background color change
@@ -53,4 +57,13 @@ hamburger.addEventListener("click", () => {
 
 // function random() {
 //   return Math.floor(Math.random() * colors.length)
+// }
+
+// typerWriter = () => {
+//   let j = 0
+//   ;(document.querySelector("#hero").innerHTML = rajaAmpat[0]), substring(0, j)
+
+//   if (j++ != rajaAmpat[0].length) {
+//     setTimeout(typerWriter, 700)
+//   }
 // }
